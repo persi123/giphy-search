@@ -61,6 +61,7 @@ const InfiniteScroll = ({
           data.map((el, i) => {
             // Working for horizontal also, (Checked)
             const thirdLastItem = totalDataLength - 7 === i;
+            console.log('imageUrl');
             const imageUrl =
               isPaused[el.id] === 'paused'
                 ? el.images['480w_still'].url
